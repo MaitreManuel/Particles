@@ -1,4 +1,5 @@
 import Particle from './Particle';
+import './stat.js';
 import './style.css';
 
 const canvas = document.querySelector('#canvas');
