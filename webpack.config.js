@@ -3,7 +3,9 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-const plugins = [new HtmlWebpackPlugin({filename: 'index.html',template: 'src/index.html',})];
+const plugins = [
+    new HtmlWebpackPlugin({filename: 'index.html',template: 'src/index.html',}),
+];
 if (process.env.NODE_ENV === 'production') plugins.push(new UglifyJsPlugin());
 
 module.exports = {
