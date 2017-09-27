@@ -1,7 +1,38 @@
+@-webkit-keyframes colorhover {
+    from {color: red;}
+    to {color: white;}
+}
+@keyframes colorhover {
+    from {color: red;}
+    to {color: white;}
+}
 body {
     margin: 0;
     overflow: hidden;
 }
 canvas {
     background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+.toolbox {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-family: Arial;
+    line-height: 1.6;
+    min-width: 125px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.toolbox .reset {
+    cursor: pointer;
+}
+.toolbox .reset:hover {
+    -webkit-animation: colorhover 1s infinite alternate;
+    animation: colorhover 1s infinite alternate;
 }
