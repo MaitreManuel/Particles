@@ -95,7 +95,7 @@ resize();
 requestAnimationFrame(animate);
 
 document.body.appendChild( stats.dom );
-document.querySelector("body").style.backgroundImage = "url('./public/ah.gif')";
+document.querySelector("body").style.backgroundImage = "url('./public/ah.gif')"; // need to put gif in cache
 window.addEventListener('resize', resize);
 canvas.addEventListener('click', addParticles);
 canvas.addEventListener('mousemove', mousePosition);
