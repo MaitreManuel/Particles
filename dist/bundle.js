@@ -171,6 +171,7 @@ resize();
 requestAnimationFrame(animate);
 
 document.body.appendChild( stats.dom );
+document.querySelector("body").style.backgroundImage = "url('./public/ah.gif')";
 window.addEventListener('resize', resize);
 canvas.addEventListener('click', addParticles);
 canvas.addEventListener('mousemove', mousePosition);
@@ -284,7 +285,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes colorhover {\n    from {color: red;}\n    to {color: white;}\n}\n@keyframes colorhover {\n    from {color: red;}\n    to {color: white;}\n}\nbody {\n    margin: 0;\n    overflow: hidden;\n}\ncanvas {\n    background-color: black;\n    background-position: center;\n    background-size: cover;\n}\n.toolbox {\n    background: rgba(255, 255, 255, 0.15);\n    color: white;\n    font-family: Arial;\n    line-height: 1.6;\n    min-width: 125px;\n    padding: 10px;\n    position: absolute;\n    right: 0;\n    text-align: center;\n    top: 0;\n    -webkit-user-select: none;\n    user-select: none;\n}\n.toolbox .reset {\n    cursor: pointer;\n}\n.toolbox .reset:hover {\n    -webkit-animation: colorhover 1s infinite alternate;\n    animation: colorhover 1s infinite alternate;\n}\n", ""]);
+exports.push([module.i, "@-webkit-keyframes colorhover {\n    from {color: red;}\n    to {color: white;}\n}\n@keyframes colorhover {\n    from {color: red;}\n    to {color: white;}\n}\nbody {\n    background-position: center;\n    background-size: cover;\n    margin: 0;\n    overflow: hidden;\n}\ncanvas {\n    background-color: black;\n    background-position: center;\n    background-size: cover;\n}\n.toolbox {\n    background: rgba(255, 255, 255, 0.15);\n    color: white;\n    font-family: Arial;\n    line-height: 1.6;\n    min-width: 125px;\n    padding: 10px;\n    position: absolute;\n    right: 0;\n    text-align: center;\n    top: 0;\n    -webkit-user-select: none;\n    user-select: none;\n}\n.toolbox .reset {\n    cursor: pointer;\n}\n.toolbox .reset:hover {\n    -webkit-animation: colorhover 1s infinite alternate;\n    animation: colorhover 1s infinite alternate;\n}\n", ""]);
 
 // exports
 
