@@ -229,7 +229,7 @@ class Particle {
     }
 
     drawLine(ctx, mouseX, mouseY, wire_dist) {
-        var distance = Math.sqrt( Math.pow(this.x - mouseX, 2) + Math.pow(this.y - mouseY, 2));
+        const distance = Math.hypot(this.x - mouseX, this.y - mouseY);
 
         if(distance < wire_dist ) {
             ctx.beginPath();
